@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Icon font: import `material-symbols/outlined.css` in layout.tsx before this file. */

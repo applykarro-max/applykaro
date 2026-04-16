@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2e606095-fc2d-47bb-972a-c2894103e678",
+    "username": "boss1234",
+    "email": "boss1234@gmail.com",
+    "passwordHash": "d45f09abc953108962e3396af5e7f31e6f5bd67ddad1f2dd2e122b0ecbd7fbf8",
+    "createdAt": "2026-04-06T03:48:46.216Z"
+  },
+  {
+    "id": "f961f214-f4f7-42a9-a3d1-96a860b0aa09",
+    "username": "boss12345",
+    "email": "boss12345@gmail.com",
+    "passwordHash": "f64ada9f291bdfac885120657f1f602a3def060a758532f4ba520033f9d57d19",
+    "createdAt": "2026-04-07T15:41:43.957Z"
+  },
+  {
+    "id": "5de310b3-ab87-49d0-8c08-730adb3eab58",
+    "username": "boss12346",
+    "email": "boss12346@gmail.com",
+    "passwordHash": "36545948bb6325823d6540a2d18b21ef2c0c73aeca4f66f3c80eb2741388b438",
+    "createdAt": "2026-04-09T12:47:22.199Z"
+  }
+]
