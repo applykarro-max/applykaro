@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>My Documents &amp; OCR Profile Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1c74e9",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111821",
+                        "emerald-success": "#00C853",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined" style="">account_balance</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]" style="">GovtJobSimplified</h2>
+</div>
+<label class="flex flex-col min-w-40 h-10 max-w-64" style="">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg" data-icon="search">
+<span class="material-symbols-outlined text-xl" style="">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 focus:ring-0 h-full placeholder:text-slate-500 px-4 rounded-r-lg text-base font-normal" placeholder="Search documents..." value="">
+</div>
+</label>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#" style="">Dashboard</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary py-1" href="#" style="">My Documents</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#" style="">My Applications</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#" style="">Notifications</a>
+</nav>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200" style="">
+<span class="material-symbols-outlined text-xl" style="">settings</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200" style="">
+<span class="material-symbols-outlined text-xl" style="">help</span>
+</button>
+</div>
+<div class="bg-primary/10 border border-primary/20 aspect-square bg-cover rounded-full size-10" data-alt="User profile avatar" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBb024WF3O3JDq_mBnejbRshdo0QFKKK_OJiD27E7g0slpmlF7ahWT5D3lBt8Cvp68A1LYwnwMwphwXQCaNFynxghZ3ZCSLOitDL5VAtm2Cf8_jweqGL9KFxaViBf1oTxEW9VYmm2BC_p8qe06sGvUweMRQUUq6IfIGBVt5tD_piw6S9S2x7wxadQ9EV-0f9rN4hcdfVriG0Gl7Fqvbag30TQOHSbhmgAnVYUirG7G8dhGMLNqDRLJwqxJt-ba4wWsYZfRqpsjd5cE&quot;);"></div>
+</div>
+</header>
+<main class="flex-1 flex max-w-[1440px] mx-auto w-full gap-6 p-6">
+<aside class="w-80 flex flex-col gap-6">
+<div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex flex-col gap-4">
+<div class="flex flex-col">
+<h3 class="text-slate-900 dark:text-white text-base font-bold" style="">Document Categories</h3>
+<p class="text-slate-500 text-xs mt-1" style="">Manage and sort your OCR files</p>
+</div>
+<div class="flex flex-col gap-1">
+<button class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 group transition-all" style="">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary" style="">badge</span>
+<span class="text-sm font-semibold" style="">Identity (Aadhaar/PAN)</span>
+</button>
+<button class="flex items-center gap-3 px-3 py-3 rounded-lg bg-primary/10 text-primary border border-primary/20" style="">
+<span class="material-symbols-outlined font-fill text-primary" style="">school</span>
+<span class="text-sm font-bold" style="">Educational Credentials</span>
+</button>
+<button class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 group transition-all" style="">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary" style="">work</span>
+<span class="text-sm font-semibold" style="">Professional Experience</span>
+</button>
+<button class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 group transition-all" style="">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary" style="">description</span>
+<span class="text-sm font-semibold" style="">Other Certifications</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-end">
+<h3 class="text-slate-900 dark:text-white text-base font-bold leading-none" style="">Profile Ready</h3>
+<span class="text-primary font-bold text-lg" style="">75%</span>
+</div>
+<div class="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 75%;"></div>
+</div>
+<p class="text-slate-500 text-xs leading-relaxed" style="">
+                            Complete your educational details to enable <span class="text-slate-900 dark:text-white font-semibold" style="">one-click applications</span> for 15 available positions.
+                        </p>
+</div>
+</div>
+<div class="bg-slate-900 text-white rounded-xl p-6 relative overflow-hidden group">
+<div class="relative z-10">
+<h4 class="font-bold text-lg" style="">Go Pro</h4>
+<p class="text-slate-400 text-sm mt-1" style="">Get advanced job recommendations &amp; automated form filling.</p>
+<button class="mt-4 bg-primary hover:bg-blue-600 px-4 py-2 rounded-lg text-sm font-bold transition-colors" style="">Upgrade Now</button>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-20 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[100px]" style="">rocket_launch</span>
+</div>
+</div>
+</aside>
+<section class="flex-1 flex flex-col gap-6">
+<div class="flex justify-between items-center">
+<div>
+<h1 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight" style="">Educational Documents</h1>
+<p class="text-slate-500 mt-1" style="">Your verified degrees and transcripts parsed by OCR</p>
+</div>
+<button class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold flex items-center gap-2 hover:bg-blue-600 shadow-lg shadow-primary/20 transition-all" style="">
+<span class="material-symbols-outlined" style="">sync</span>
+                        Sync OCR Data
+                    </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<button class="border-2 border-dashed border-slate-300 dark:border-slate-700 bg-white/50 dark:bg-slate-900/30 rounded-xl flex flex-col items-center justify-center p-8 gap-4 hover:border-primary hover:bg-white dark:hover:bg-slate-900 transition-all group min-h-[300px]" style="">
+<div class="size-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 group-hover:bg-primary/10 group-hover:text-primary transition-all">
+<span class="material-symbols-outlined text-4xl" style="">add_circle</span>
+</div>
+<div class="text-center">
+<span class="block text-slate-900 dark:text-white font-bold text-lg" style="">Add New Document</span>
+<span class="text-slate-500 text-sm" style="">PDF, JPEG, or PNG up to 10MB</span>
+</div>
+</button>
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 group hover:shadow-md transition-shadow">
+<div class="aspect-video relative overflow-hidden bg-slate-100 dark:bg-slate-800">
+<div class="w-full h-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center bg-center bg-cover" data-alt="Degree certificate preview" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAQkKiWkZfTMGCKFXgG3y9a-H7piIy5fEPBZWAdlrltDeaGNctMp-9TmG0cFHkxP_k7Tf_GnGk34-qFLElBWWLq7WEBKIaEBduA3qlwWfj5w3ME4WDyZ84yLCfZ3-5NfG4_petkst9jsHP1Wk1xe7jkDbwR-B77fReEKKcWo1X0cjUEERllgbABTmUx8AUZhnS3Vk7Ps5kvXsL5jX1rUv2m61T-_rjSEjniD6pDugbKkmmFD9bDpIoO-EK8daMSmvYw-7UDtOU_PaQ&quot;);"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1 bg-emerald-success text-white px-2 py-1 rounded text-[10px] font-black uppercase tracking-wider shadow-sm" style="">
+<span class="material-symbols-outlined text-xs" style="">verified</span>
+                                Verified
+                            </div>
+</div>
+<div class="p-5">
+<h4 class="font-bold text-slate-900 dark:text-white truncate" style="">Bachelor of Science - Computer Science</h4>
+<p class="text-slate-500 text-xs mt-1" style="">Uploaded: Oct 12, 2023</p>
+<div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-2">
+<div class="flex justify-between text-xs">
+<span class="text-slate-400" style="">CGPA</span>
+<span class="font-bold text-slate-700 dark:text-slate-200" style="">9.2 / 10.0</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-400" style="">University</span>
+<span class="font-bold text-slate-700 dark:text-slate-200" style="">IIT Delhi</span>
+</div>
+</div>
+<button class="w-full mt-4 bg-slate-50 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary py-2 rounded-lg text-sm font-bold transition-all text-slate-600 dark:text-slate-300" style="">
+                                View &amp; Edit Data
+                            </button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 group hover:shadow-md transition-shadow">
+<div class="aspect-video relative overflow-hidden bg-slate-100 dark:bg-slate-800">
+<div class="w-full h-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center bg-center bg-cover" data-alt="Transcript preview" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuB2wf2pbpDsDwK9JbJuZ9FWJtZZ2qaUYR-X6oZjizg3AGuIogOtMLtQfFEIOqZqQKOp6QVAt5xg3gdTml-Bg92y_7w-CwD8vnwEsYXLfYzSSMa1N02q1x2LoE0Efl4_OG8roTTuxpbNWpRDa636AN43ePouzQ9XzOZnbLvYhqle9IhWaG45VJaF8U3CVg--pFbbZQIv3DcagXto6z4y3B7bLIXgzJ3m0G8m-os8PHkNk7v2RDg1e3PODsp-YPgke1ivvyuycyKqXeM&quot;);"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1 bg-emerald-success text-white px-2 py-1 rounded text-[10px] font-black uppercase tracking-wider shadow-sm" style="">
+<span class="material-symbols-outlined text-xs" style="">verified</span>
+                                Verified
+                            </div>
+</div>
+<div class="p-5">
+<h4 class="font-bold text-slate-900 dark:text-white truncate" style="">12th Grade Marksheet (CBSE)</h4>
+<p class="text-slate-500 text-xs mt-1" style="">Uploaded: Sep 05, 2023</p>
+<div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-2">
+<div class="flex justify-between text-xs">
+<span class="text-slate-400" style="">Score</span>
+<span class="font-bold text-slate-700 dark:text-slate-200" style="">95.4%</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-400" style="">Passing Year</span>
+<span class="font-bold text-slate-700 dark:text-slate-200" style="">2019</span>
+</div>
+</div>
+<button class="w-full mt-4 bg-slate-50 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary py-2 rounded-lg text-sm font-bold transition-all text-slate-600 dark:text-slate-300" style="">
+                                View &amp; Edit Data
+                            </button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 group hover:shadow-md transition-shadow opacity-90 border-amber-200 dark:border-amber-900/50">
+<div class="aspect-video relative overflow-hidden bg-slate-100 dark:bg-slate-800">
+<div class="w-full h-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center bg-center bg-cover grayscale opacity-50" data-alt="Certificate processing preview" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAmNj1_RSEbpuq_8iJDU_fJVbA9d4VGmEEcnZ02SmjdilGkSx1zOzqtsFkUSvTZaC1V5TRXbSjusyf1lHxauYSaX1lLq7IHgHgXo4irMhIvyfj7mYrrFSdSorAeiigZ6PZ5TygkN84s5hc_RTsUDVZUdhp_rFLNJnCIUiJVL6U_PV1I4_b_TxubAOXxJTzb0TzOWVWkU329gIEC-cNegcoRXgnOAJb87xxCKndBJugFBdY4UXREBaklkKjhtsXch8QCc_hK4QbZ13Y&quot;);"></div>
+<div class="absolute inset-0 bg-slate-900/60 flex flex-col items-center justify-center text-white gap-2">
+<div class="flex gap-1">
+<div class="size-2 bg-primary rounded-full animate-bounce"></div>
+<div class="size-2 bg-primary rounded-full animate-bounce [animation-delay:-.3s]"></div>
+<div class="size-2 bg-primary rounded-full animate-bounce [animation-delay:-.5s]"></div>
+</div>
+<span class="text-[10px] font-bold tracking-widest uppercase" style="">OCR Processing</span>
+</div>
+</div>
+<div class="p-5">
+<h4 class="font-bold text-slate-900 dark:text-white truncate" style="">Cloud Computing Certification</h4>
+<p class="text-slate-500 text-xs mt-1" style="">Uploaded: 5 minutes ago</p>
+<div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-2 italic">
+<p class="text-slate-400 text-xs" style="">Extracting data fields...</p>
+</div>
+<button class="w-full mt-4 bg-slate-100 dark:bg-slate-800/50 py-2 rounded-lg text-sm font-bold text-slate-400 cursor-not-allowed" disabled="" style="">
+                                Waiting for results
+                            </button>
+</div>
+</div>
+</div>
+<div class="mt-8 bg-primary/5 border border-primary/10 rounded-xl p-8 flex items-center gap-8">
+<div class="size-20 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-primary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-4xl" style="">automation</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-white font-bold text-xl" style="">Auto-fill enabled for 45 Govt Agencies</h3>
+<p class="text-slate-600 dark:text-slate-400 mt-1 max-w-2xl" style="">Based on your verified documents, GovtJobSimplified can now automatically fill out applications for SSC, UPSC, and Banking sectors with 99.8% accuracy.</p>
+<button class="mt-4 text-primary font-bold text-sm hover:underline flex items-center gap-1" style="">
+                            Explore eligible jobs <span class="material-symbols-outlined text-sm" style="">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-6 px-10">
+<div class="max-w-[1440px] mx-auto flex justify-between items-center text-slate-500 text-xs font-medium">
+<p class="" style="">© 2024 GovtJobSimplified • AI-Powered Career Automation</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#" style="">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#" style="">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#" style="">Security Center</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

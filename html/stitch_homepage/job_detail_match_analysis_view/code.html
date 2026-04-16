@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Job Detail &amp; Match Analysis | GovtJobSimplified</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1A73E8", // Royal Blue from user request
+                        "success": "#00C853", // Emerald from user request
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#181121",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">GovtJobSimplified</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary pb-1" href="#">Job Search</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">My Profile</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Applications</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4">
+<label class="hidden lg:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-400 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg" data-icon="search">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-0 border-none bg-slate-100 dark:bg-slate-800 placeholder:text-slate-500 px-4 rounded-l-none pl-2 text-sm font-normal" placeholder="Search departments..." value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-blue-700 transition-colors">
+<span>Profile</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-slate-200" data-alt="User profile avatar circle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDI-T0tr57GNp4vI69GgNCe5jEj35fLpswbf_k9XlLq_N0zSra0Xzyx-67a0th696lV5kb_MaCGEknL8WQZRHxj6fWgt3YJ5xgJu3jrQ3gRqPSP_01nDpTeBrxqcDqy2auT4OKb6uctPQweIoKkYD82X2kzjW0VQOD6BL2nLXxf-Em1qjLA8bfA3YlPdWLd9B0qjBWTFNtuKkuIgyyB4SR-jp2hUCtEB_G9zdnV9DUE0cFZFWhBSvf_hsHHIchfNJBFhGQWpRsaV2k");'></div>
+</div>
+</header>
+<main class="px-6 md:px-20 lg:px-40 py-8">
+<div class="flex flex-wrap gap-2 mb-6">
+<a class="text-slate-500 text-sm font-medium hover:text-primary" href="#">Home</a>
+<span class="text-slate-400 text-sm">/</span>
+<a class="text-slate-500 text-sm font-medium hover:text-primary" href="#">Active Openings</a>
+<span class="text-slate-400 text-sm">/</span>
+<span class="text-slate-900 dark:text-white text-sm font-semibold">Senior Administrative Officer</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-6">
+<div class="bg-white dark:bg-slate-900 rounded-xl p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex flex-col @container md:flex-row gap-6 items-start">
+<div class="size-24 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center shrink-0 border border-slate-200 dark:border-slate-700">
+<span class="material-symbols-outlined text-4xl text-primary">account_balance</span>
+</div>
+<div class="flex-1">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h1 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">Senior Administrative Officer</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg mt-1 font-medium">Department of Personnel &amp; Training</p>
+<div class="flex flex-wrap gap-3 mt-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-semibold">
+<span class="material-symbols-outlined text-sm">work</span> Full-time
+                                                </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-semibold">
+<span class="material-symbols-outlined text-sm">verified_user</span> Gazetted Post
+                                                </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-semibold">
+<span class="material-symbols-outlined text-sm">location_on</span> New Delhi
+                                                </span>
+</div>
+</div>
+<button class="bg-primary hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg shadow-primary/20 transition-all flex items-center gap-2 whitespace-nowrap">
+<span class="material-symbols-outlined">bolt</span>
+                                            One-Click Apply
+                                        </button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+<div class="bg-slate-50 dark:bg-slate-800/50 border-b border-slate-200 dark:border-slate-800 px-8 py-4">
+<h3 class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">description</span>
+                                    Job Responsibilities
+                                </h3>
+</div>
+<div class="p-8">
+<ul class="space-y-4 text-slate-600 dark:text-slate-400 list-disc pl-5">
+<li>Formulate and implement administrative policies for the department's regional offices.</li>
+<li>Oversee the annual budgetary planning and expenditure monitoring for Grade-A personnel.</li>
+<li>Coordinate high-level inter-departmental meetings and maintain executive correspondences.</li>
+<li>Supervise recruitment processes and manage the performance appraisal systems.</li>
+<li>Ensure compliance with central government service rules and statutory regulations.</li>
+</ul>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+<div class="bg-slate-50 dark:bg-slate-800/50 border-b border-slate-200 dark:border-slate-800 px-8 py-4">
+<h3 class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">school</span>
+                                    Eligibility Criteria
+                                </h3>
+</div>
+<div class="p-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex items-start gap-4">
+<div class="size-10 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">history_edu</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white text-sm">Educational Qualification</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Post Graduate degree in Public Administration or MBA.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="size-10 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">cake</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white text-sm">Age Limit</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">25 - 40 Years (As of Jan 1, 2024).</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="size-10 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">badge</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white text-sm">Experience Required</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Minimum 5 years in administrative role.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="size-10 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">translate</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white text-sm">Language Proficiency</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Fluent in English and Hindi (Written/Verbal).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="bg-white dark:bg-slate-900 rounded-xl border-2 border-success/30 dark:border-success/20 overflow-hidden shadow-lg shadow-success/5">
+<div class="bg-success/10 border-b border-success/20 px-6 py-4 flex items-center justify-between">
+<h3 class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-success">analytics</span>
+                                    Match Analysis
+                                </h3>
+<span class="bg-success text-white px-3 py-1 rounded-full text-sm font-bold">95% Match</span>
+</div>
+<div class="p-6 space-y-6">
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-500">
+<span>Education</span>
+<span class="text-success">Match</span>
+</div>
+<div class="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-success" style="width: 100%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-500">
+<span>Experience</span>
+<span class="text-success">Match</span>
+</div>
+<div class="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-success" style="width: 90%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-500">
+<span>Age Criteria</span>
+<span class="text-success">Match</span>
+</div>
+<div class="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-success" style="width: 100%;"></div>
+</div>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-800">
+<p class="text-xs text-slate-500 italic leading-relaxed">
+                                        Analysis generated via your OCR Profile (Last updated: Oct 12, 2023).
+                                    </p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+<div class="bg-slate-50 dark:bg-slate-800/50 border-b border-slate-200 dark:border-slate-800 px-6 py-4">
+<h3 class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">event</span>
+                                    Important Dates
+                                </h3>
+</div>
+<div class="p-6 space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="p-2 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">schedule</span>
+</div>
+<span class="text-sm font-medium text-slate-600 dark:text-slate-400">Application Deadline</span>
+</div>
+<span class="text-sm font-bold text-red-500">Oct 30, 2023</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="p-2 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">assignment</span>
+</div>
+<span class="text-sm font-medium text-slate-600 dark:text-slate-400">Exam Date</span>
+</div>
+<span class="text-sm font-bold text-slate-900 dark:text-white">Nov 15, 2023</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+<div class="bg-slate-50 dark:bg-slate-800/50 border-b border-slate-200 dark:border-slate-800 px-6 py-4">
+<h3 class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">info</span>
+                                    Quick Overview
+                                </h3>
+</div>
+<div class="p-6 space-y-6">
+<div>
+<p class="text-xs font-bold uppercase text-slate-400 tracking-widest mb-1">Salary Scale</p>
+<p class="text-lg font-bold text-slate-900 dark:text-white">₹78,800 - ₹2,09,200</p>
+<p class="text-xs text-slate-500">Level 12 as per 7th CPC</p>
+</div>
+<div>
+<p class="text-xs font-bold uppercase text-slate-400 tracking-widest mb-2">Location</p>
+<div class="relative h-32 w-full rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Abstract map showing New Delhi location" data-location="New Delhi" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0y8vPugUVubTLvms9lPOY04lAmSGfvum-4wPFY0ba5G2Zo1uZzguudECdYVEFsRZe7_T-YfGQ8WwL-rchc1vSrU9Dn7tPGJA3iJT35rvYymBzSeziTha_wm-0mUggFbhTvNOLbQ0j76-vmmW5Zynk65c0Kjm85DrYP7CQKGTx_dFuvmZ4wATXRBvIc83BL_GCs_MXKdzdokgwD4dbndNXfmDgh6Z6YgoyguBeXPEQjNUdfpEbzHe3s0l8Wj0u0URPGyulBo1rb_M');"></div>
+<div class="absolute inset-0 bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">South Block, New Delhi, India</p>
+</div>
+<div>
+<p class="text-xs font-bold uppercase text-slate-400 tracking-widest mb-1">Department Overview</p>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                        DoPT is the coordinating agency of the Central Government in personnel matters, specifically recruitment and career management.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto py-10 px-10 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-slate-400">
+<span class="material-symbols-outlined">account_balance</span>
+<span class="text-sm font-medium">GovtJobSimplified © 2023. Official Recruitment Portal.</span>
+</div>
+<div class="flex gap-6">
+<a class="text-sm text-slate-500 hover:text-primary" href="#">Privacy Policy</a>
+<a class="text-sm text-slate-500 hover:text-primary" href="#">Terms of Service</a>
+<a class="text-sm text-slate-500 hover:text-primary" href="#">Support</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

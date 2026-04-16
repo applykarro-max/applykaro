@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Security &amp; Privacy Control Center | GovtJobSimplified</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3f68e4",
+                        "emerald": "#10b981",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111521",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 md:px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">GovtJobSimplified</h2>
+</div>
+<label class="hidden lg:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg" data-icon="search">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 focus:ring-0 h-full placeholder:text-slate-500 px-4 rounded-r-lg text-base font-normal" placeholder="Search settings..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Profiles</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Applications</a>
+</nav>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-slate-200 dark:border-slate-700" data-alt="User profile avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjTHHINv-Nch0NZaQ_bKM4GXhBan59zKDGywKCjn2vAhzt44klpQ1dLr9t1qaUuGLaRWydYv5Aj-CHD0QKvhZ9fqocJn_ep77Ziv7RUQSmt9HYYF5F5t1MuHG0P4cKgu84zswntsf4ziz44RGb1l9TKv0MmNbckcUn2Fw7Dj-6DcE-RCFX4uxlYxGmwHUUqDBaGZ_CxAbXSMZTlDT7H4xWzn-_fj1a-YfbH8IDzOotAjghsNZpx0S3SYvM5pLAN5BgAGiiwJVAJ5w");'></div>
+</div>
+</header>
+<main class="flex-1 flex justify-center py-8 px-4 md:px-10">
+<div class="layout-content-container flex flex-col md:flex-row max-w-[1200px] flex-1 gap-8">
+<!-- Sidebar Navigation -->
+<aside class="flex flex-col gap-6 w-full md:w-72 shrink-0">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary/10 text-primary border border-primary/20">
+<span class="material-symbols-outlined">shield</span>
+<p class="text-sm font-semibold">Security Overview</p>
+</div>
+<div class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-slate-500">key</span>
+<p class="text-sm font-medium">Data Privacy</p>
+</div>
+<div class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-slate-500">fingerprint</span>
+<p class="text-sm font-medium">Access Logs</p>
+</div>
+<div class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-slate-500">account_tree</span>
+<p class="text-sm font-medium">Connected Portals</p>
+</div>
+</div>
+<!-- Bank-grade Info Sidebar Card -->
+<div class="bg-white dark:bg-slate-900 p-5 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col gap-4 shadow-sm">
+<div class="flex items-center gap-2 text-emerald">
+<span class="material-symbols-outlined">lock</span>
+<span class="text-xs font-bold uppercase tracking-wider">Bank-Grade Protection</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Document Encryption</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                                All certificates and documents built via OCR are protected with AES-256 bit encryption. Only verified application portals can request temporary decryption tokens.
+                            </p>
+<div class="flex items-center gap-2 mt-2">
+<div class="px-2 py-1 rounded bg-emerald/10 text-emerald text-[10px] font-bold border border-emerald/20 uppercase">AES-256 Active</div>
+<div class="px-2 py-1 rounded bg-primary/10 text-primary text-[10px] font-bold border border-primary/20 uppercase">SSL Secure</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<div class="flex-1 flex flex-col gap-8">
+<div>
+<h1 class="text-3xl font-black tracking-tight text-slate-900 dark:text-slate-100">Security &amp; Privacy Control</h1>
+<p class="text-slate-500 dark:text-slate-400 mt-1">Manage your 2FA, data permissions, and document encryption settings for official government portals.</p>
+</div>
+<!-- 2FA Section -->
+<section class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+<div class="p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">phonelink_lock</span>
+</div>
+<div>
+<h2 class="text-lg font-bold">Two-Factor Authentication</h2>
+<p class="text-sm text-slate-500 dark:text-slate-400">Add an extra layer of security using TOTP (Authenticator App) or SMS codes.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-14 h-7 bg-slate-200 dark:bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</section>
+<!-- Data Access Permissions Section -->
+<section class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h2 class="text-xl font-bold px-1">Data Access Permissions</h2>
+<button class="text-primary text-sm font-semibold hover:underline">View All History</button>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Portal Card 1 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-5 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 gap-4">
+<div class="flex items-center gap-4">
+<div class="size-10 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-300">account_balance</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-slate-900 dark:text-slate-100">National Career Service (NCS)</h3>
+<span class="flex items-center gap-1 text-[10px] font-bold text-emerald bg-emerald/10 px-1.5 py-0.5 rounded border border-emerald/20">
+<span class="material-symbols-outlined text-[12px]">verified</span> VERIFIED
+                                                </span>
+</div>
+<p class="text-xs text-slate-500">Accessing: Profile Info, OCR Transcripts, Work Experience</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs text-slate-400">Granted: Oct 12, 2023</span>
+<button class="px-3 py-1.5 text-xs font-bold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 transition-colors">Manage</button>
+</div>
+</div>
+<!-- Portal Card 2 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-5 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 gap-4">
+<div class="flex items-center gap-4">
+<div class="size-10 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-300">apartment</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Staff Selection Commission</h3>
+<span class="flex items-center gap-1 text-[10px] font-bold text-emerald bg-emerald/10 px-1.5 py-0.5 rounded border border-emerald/20">
+<span class="material-symbols-outlined text-[12px]">verified</span> VERIFIED
+                                                </span>
+</div>
+<p class="text-xs text-slate-500">Accessing: Aadhaar Verification, Degree Certificates</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs text-slate-400">Granted: Nov 05, 2023</span>
+<button class="px-3 py-1.5 text-xs font-bold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 transition-colors">Manage</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Status and Emergency Action -->
+<div class="mt-8 flex flex-col gap-6">
+<div class="p-6 bg-emerald/5 dark:bg-emerald/10 border border-emerald/20 rounded-xl flex items-start gap-4">
+<span class="material-symbols-outlined text-emerald text-3xl">task_alt</span>
+<div>
+<h4 class="font-bold text-emerald">Account Trust Status: High</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Your profile meets all government security standards. Documents are encrypted and 2FA is active. You are eligible for one-click express applications.</p>
+</div>
+</div>
+<div class="border-t border-slate-200 dark:border-slate-800 pt-8">
+<div class="flex flex-col gap-4 max-w-md">
+<h3 class="text-lg font-bold text-red-600 dark:text-red-500">Emergency Actions</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Instantly revoke all access to your profile from all government portals. This will pause all active applications until re-authorized.</p>
+<button class="flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition-colors">
+<span class="material-symbols-outlined">gpp_maybe</span>
+                                        Revoke All Access
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Small -->
+<footer class="mt-auto px-4 md:px-10 py-6 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+<p>© 2024 GovtJobSimplified. All data handled as per ISO 27001 standards.</p>
+<div class="flex gap-4">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Audit Log</a>
+<a class="hover:text-primary" href="#">System Status</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

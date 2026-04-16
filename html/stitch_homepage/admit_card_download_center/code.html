@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Admit Card Download Center | GovtJobSimplified</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1c74e9",
+                        "success-emerald": "#00C853",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111821",
+                        "royal-blue": "#1A73E8",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Public Sans", sans-serif;
+        }
+        .progress-step-active {
+            color: #00C853;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 flex items-center justify-center bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-primary">description</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">GovtJobSimplified</h2>
+</div>
+<label class="flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 focus:ring-0 h-full placeholder:text-slate-500 px-4 rounded-r-lg text-base font-normal" placeholder="Search applications..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Applications</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary py-1" href="#">Admit Cards</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Profile</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-lg h-10 px-4 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-sm font-bold">
+<span class="material-symbols-outlined mr-2 text-[20px]">notifications</span>
+<span>2</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="User profile avatar with professional look" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDywCVgHJEvbzYHVhaAq1a9_89nTycIfwNy7MNhzaSZBOEMHxKCwION1xh321M-Pp_8XELemPM89qpzXAx0DvawlxzqgXCkkZ-YxDYccitRJw5S8DPne1sSjnTMnU9N4VVy123o9sUS7RmaV2HbLLW8pZ3CshMiu0ALCDBKuDZeetFQsJAMBeCarDxVt_yi8arRrJKSJEeAwWEVEVHUqxWv4HAeNlAUA8ITq7MO0jgdmQHS3C8Gufnf60V6BGh9P3z-D4tM0WEmADI");'></div>
+</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto w-full px-6 py-8">
+<!-- Breadcrumbs & Status Tracker -->
+<div class="mb-8">
+<div class="flex items-center gap-2 text-slate-500 text-sm mb-6">
+<a class="hover:text-primary" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-primary" href="#">My Applications</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-100 font-medium">Admit Card Download</span>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex items-center justify-between mb-8">
+<div class="flex flex-col">
+<h1 class="text-2xl font-bold text-slate-900 dark:text-white">Civil Services Prelims 2024</h1>
+<p class="text-slate-500">Application ID: UPSC-2024-88291-GS</p>
+</div>
+<div class="flex items-center gap-2 px-4 py-2 bg-success-emerald/10 text-success-emerald rounded-full font-bold text-sm">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+                            ADMIT CARD ISSUED
+                        </div>
+</div>
+<!-- Progress Stepper -->
+<div class="relative flex items-center justify-between">
+<div class="absolute top-1/2 left-0 w-full h-1 bg-slate-100 dark:bg-slate-800 -z-10 -translate-y-1/2"></div>
+<div class="absolute top-1/2 left-0 h-1 bg-success-emerald -z-10 -translate-y-1/2" style="width: 75%;"></div>
+<div class="flex flex-col items-center gap-2 bg-white dark:bg-slate-900 px-2">
+<div class="size-8 rounded-full bg-success-emerald text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+</div>
+<span class="text-xs font-bold text-success-emerald">Applied</span>
+</div>
+<div class="flex flex-col items-center gap-2 bg-white dark:bg-slate-900 px-2">
+<div class="size-8 rounded-full bg-success-emerald text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<span class="text-xs font-bold text-success-emerald">Verified</span>
+</div>
+<div class="flex flex-col items-center gap-2 bg-white dark:bg-slate-900 px-2">
+<div class="size-10 rounded-full bg-success-emerald text-white flex items-center justify-center ring-4 ring-success-emerald/20">
+<span class="material-symbols-outlined text-[24px]">assignment_turned_in</span>
+</div>
+<span class="text-xs font-bold text-success-emerald uppercase tracking-wider">Admit Card</span>
+</div>
+<div class="flex flex-col items-center gap-2 bg-white dark:bg-slate-900 px-2">
+<div class="size-8 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+</div>
+<span class="text-xs font-bold text-slate-400">Exam Day</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Area -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Admit Card Preview Section -->
+<div class="lg:col-span-2 space-y-6">
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-800">
+<div class="p-6 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+<h3 class="text-lg font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">description</span>
+                                Document Preview: Admit Card
+                            </h3>
+<div class="flex gap-2">
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg text-slate-500 transition-colors">
+<span class="material-symbols-outlined">print</span>
+</button>
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg text-slate-500 transition-colors">
+<span class="material-symbols-outlined">zoom_in</span>
+</button>
+</div>
+</div>
+<!-- High-Tech OCR-driven PDF Preview -->
+<div class="p-8 bg-slate-50 dark:bg-slate-950 flex justify-center">
+<div class="w-full max-w-[500px] aspect-[1/1.4] bg-white shadow-2xl rounded-sm border-t-[12px] border-royal-blue relative overflow-hidden text-[#333]">
+<!-- Watermark -->
+<div class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">
+<span class="text-6xl font-black rotate-45 uppercase">Official Copy</span>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-10">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1">Union Public Service Commission</p>
+<h4 class="text-xl font-bold border-b-2 border-royal-blue pb-2 mb-4">E-Admit Card 2024</h4>
+</div>
+<div class="size-16 bg-slate-100 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-4xl text-slate-300">account_balance</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-y-6 text-sm mb-10">
+<div>
+<p class="text-xs text-slate-400 uppercase font-semibold">Candidate Name</p>
+<p class="font-bold text-base">ALEX JOHNSON</p>
+</div>
+<div class="text-right">
+<p class="text-xs text-slate-400 uppercase font-semibold">Roll Number</p>
+<p class="font-bold text-base">GS88291044</p>
+</div>
+<div>
+<p class="text-xs text-slate-400 uppercase font-semibold">Father's Name</p>
+<p class="font-medium">ROBERT JOHNSON</p>
+</div>
+<div class="text-right">
+<p class="text-xs text-slate-400 uppercase font-semibold">Exam Category</p>
+<p class="font-medium">GENERAL (GEN)</p>
+</div>
+</div>
+<div class="bg-royal-blue/5 rounded-lg p-4 border border-royal-blue/10 mb-8">
+<h5 class="font-bold text-royal-blue mb-3 text-xs uppercase tracking-wider">Examination Schedule</h5>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<p class="text-[10px] text-slate-400 uppercase">Date</p>
+<p class="font-bold">OCT 24, 2024</p>
+</div>
+<div>
+<p class="text-[10px] text-slate-400 uppercase">Reporting Time</p>
+<p class="font-bold">08:30 AM IST</p>
+</div>
+</div>
+</div>
+<div class="mb-10">
+<p class="text-xs text-slate-400 uppercase font-semibold mb-2">Examination Center</p>
+<p class="text-sm font-medium leading-relaxed">
+                                            Centennial High School, Block B-4, <br/>
+                                            Sector 18, RK Puram, New Delhi - 110022
+                                        </p>
+</div>
+<div class="flex justify-between items-end mt-auto">
+<div class="size-20 bg-slate-50 border border-slate-200 flex items-center justify-center" data-alt="QR Code for admit card verification">
+<span class="material-symbols-outlined text-4xl text-slate-400">qr_code_2</span>
+</div>
+<div class="text-right flex flex-col items-center">
+<div class="h-10 w-24 bg-slate-100 mb-2" data-alt="Official digital signature placeholder"></div>
+<p class="text-[9px] uppercase font-bold text-slate-400">Authorized Signatory</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row gap-4 items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-red-500 text-3xl">picture_as_pdf</span>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-white leading-none">UPSC_Prelims_2024_GS88291.pdf</p>
+<p class="text-xs text-slate-500 mt-1">Size: 1.2 MB • Verified by GovtJobSimplified</p>
+</div>
+</div>
+<button class="w-full md:w-auto flex items-center justify-center gap-2 bg-royal-blue hover:bg-royal-blue/90 text-white font-bold py-3 px-8 rounded-lg transition-all shadow-lg shadow-royal-blue/20">
+<span class="material-symbols-outlined">download</span>
+                                Download Admit Card (PDF)
+                            </button>
+</div>
+</div>
+</div>
+<!-- Right Sidebar: Instructions & Location -->
+<div class="space-y-6">
+<!-- Instructions Card -->
+<div class="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-800">
+<h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-amber-500">info</span>
+                            Exam Day Essentials
+                        </h3>
+<div class="space-y-4">
+<div class="flex gap-4 items-start">
+<div class="size-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] text-slate-600 dark:text-slate-400">badge</span>
+</div>
+<div>
+<p class="text-sm font-bold">Original ID Proof</p>
+<p class="text-xs text-slate-500">Aadhar, PAN, or Passport as mentioned in application.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="size-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] text-slate-600 dark:text-slate-400">history_edu</span>
+</div>
+<div>
+<p class="text-sm font-bold">Black/Blue Ball Point Pen</p>
+<p class="text-xs text-slate-500">Bring at least 2 working pens for OMR marking.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="size-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] text-slate-600 dark:text-slate-400">alarm</span>
+</div>
+<div>
+<p class="text-sm font-bold">Reporting Time: 08:30 AM</p>
+<p class="text-xs text-slate-500">Entry closes strictly at 09:15 AM. Plan accordingly.</p>
+</div>
+</div>
+</div>
+<div class="mt-6 p-4 bg-slate-50 dark:bg-slate-800/50 rounded-lg border border-slate-200 dark:border-slate-800">
+<p class="text-xs text-slate-500 leading-relaxed italic">
+                                "Mobile phones, smartwatches, and calculators are strictly prohibited inside the examination hall."
+                            </p>
+</div>
+</div>
+<!-- Location Card -->
+<div class="bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="h-40 w-full bg-slate-200 relative" data-location="New Delhi" style="">
+<div class="absolute inset-0 flex items-center justify-center bg-slate-300 dark:bg-slate-800">
+<span class="material-symbols-outlined text-4xl text-slate-400">map</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white">
+<p class="text-xs font-bold uppercase tracking-widest opacity-80">Exam Venue</p>
+<p class="font-bold">RK Puram, Sector 18</p>
+</div>
+</div>
+<div class="p-6">
+<button class="w-full flex items-center justify-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all font-bold py-2.5 rounded-lg">
+<span class="material-symbols-outlined">directions</span>
+                                View Center on Maps
+                            </button>
+<p class="text-center text-[11px] text-slate-500 mt-3 flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">distance</span>
+                                ~12.4 km from your registered address
+                            </p>
+</div>
+</div>
+<!-- Help Center -->
+<div class="p-4 rounded-xl border-2 border-dashed border-slate-200 dark:border-slate-800">
+<p class="text-sm font-bold mb-1">Need assistance?</p>
+<p class="text-xs text-slate-500 mb-3">Facing issues with downloading or errors in Admit Card?</p>
+<button class="text-primary text-xs font-bold flex items-center gap-1 hover:underline">
+                            Contact Nodal Officer
+                            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto border-t border-slate-200 dark:border-slate-800 py-6 px-10 text-center">
+<p class="text-xs text-slate-500">
+                © 2024 GovtJobSimplified. Digital India Initiative. OCR Processing secured by AES-256 Encryption.
+            </p>
+</footer>
+</div>
+</body></html>
